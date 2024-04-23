@@ -73,7 +73,7 @@ evaluation:
 
 training:
   experiment_name: fashionclip_mtl(itc+tgir+scr+cap)_wa_xattn_warmup
-  batch_size: 64
+  batch_size: 32
   lr_scheduler: true
   max_updates: 90000
   log_interval: 10
@@ -88,7 +88,7 @@ training:
     criteria: fashioniq/r@k_fashioniq/avg
     minimize: false
   wandb:
-    enabled: true
+    enabled: false
 
 run_type: train_val
 
